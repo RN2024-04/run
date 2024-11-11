@@ -1,0 +1,11 @@
+from suite_12_3 import *
+import unittest
+
+
+
+
+run=unittest.TestSuite()
+run.addTest(unittest.TestLoader().loadTestsFromTestCase(suite_12_3.Runner))
+run.addTest(unittest.TestLoader().loadTestsFromTestCase(suite_12_3.Tournament))
+runn=unittest.TextTestRunner(verbosity=2)
+runn.run(run)
